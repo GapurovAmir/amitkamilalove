@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Амит и Камилла</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Амит и Камилла — приглашение на свадьбу">
+<meta property="og:description" content="26 ноября 2026, 17:00. Зал торжеств «Рахима». Будем рады видеть вас!">
+<meta name="description" content="Приглашение на свадьбу Амита и Камиллы, 26 ноября 2026">
+<meta property="og:image" content="https://amitkamillalove.netlify.app/invitation.jpg">
+<meta property="og:image:width" content="1310">
+<meta property="og:image:height" content="1200">
+<meta property="og:url" content="https://amitkamillalove.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Амит и Камилла — приглашение на свадьбу">
+<meta name="twitter:description" content="26 ноября 2026, 17:00. Ресторан Рахима. Будем рады видеть вас!">
+<meta name="twitter:image" content="https://amitkamillalove.netlify.app/invitation.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Marck+Script&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  --forest: #0E3622;
+  --forest-btn: #0A4A2A;
+  --gold: #C9A27A;
+  --gold-ink: #7A5B3A;
+  --paper: #FFFFFF;
+  --mist: #E4EBE2;
+  --soft-ink: #4B5F54;
+  --on-forest: #EDEFE8;
+  --f-display: 'Cormorant Garamond', Georgia, serif;
+  --f-script: 'Marck Script', 'Cormorant Garamond', Georgia, cursive;
+  --f-body: 'Jost', system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body {
+  margin: 0;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background: var(--paper);
+  color: var(--forest);
+  font-family: var(--f-body);
+  font-size: 17px;
+  line-height: 1.6;
+}
+img { max-width: 100%; }
+[hidden]:not([hidden=until-found i]) { display: none !important; }
+a { color: var(--gold-ink); }
+a:hover { color: var(--forest); }
+.band { width: 100%; position: relative; overflow: hidden; }
+.in {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 88px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  position: relative;
+}
+.stack { display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; min-width: 0; }
+.eyebrow { font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold-ink); margin: 0; }
+h1, h2, p { margin: 0; }
+h2.display { font-family: var(--f-display); font-weight: 400; font-style: italic; font-size: clamp(34px, 5vw, 48px); line-height: 1.15; text-wrap: balance; }
+
+/* hero */
+.hero { background: var(--forest); color: var(--on-forest); }
+.invite-art { background: var(--forest); padding-block: 0 42px; }
+.invite-art img { display: block; width: min(100%, 620px); height: auto; border: 1px solid rgba(201,162,122,0.65); }
+.hero .in { padding-block: 20px; max-width: 900px; }
+.frame { border: 1px solid rgba(201,162,122,0.55); padding: 72px 20px 84px; }
+.hero .eyebrow { color: var(--gold); }
+.names { font-family: var(--f-display); font-style: italic; font-weight: 400; line-height: 0.95; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.names .n { font-size: clamp(64px, 14vw, 144px); }
+.names .amp { font-size: clamp(36px, 6vw, 60px); color: var(--gold); }
+.rule { width: 72px; height: 1px; background: var(--gold); }
+.date-big { font-family: var(--f-display); font-size: clamp(28px, 4vw, 40px); letter-spacing: 0.04em; }
+.weekday { font-size: 13px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); }
+
+/* welcome */
+.welcome p { max-width: 56ch; text-wrap: pretty; }
+.signed { font-family: var(--f-display); font-style: italic; font-size: 26px; }
+
+/* calendar */
+.mist { background: var(--mist); }
+.month { font-family: var(--f-display); font-weight: 400; font-size: clamp(40px, 6vw, 56px); line-height: 1.1; }
+.cal { width: 100%; max-width: 420px; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; text-align: center; }
+.cal .wd { font-size: 13px; color: var(--soft-ink); padding-bottom: 6px; }
+.cal span, .cal b { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 16px; font-variant-numeric: tabular-nums; }
+.cal b { border-radius: 50%; background: var(--forest); color: var(--on-forest); font-weight: 500; }
+.countdown { font-family: var(--f-display); font-style: italic; font-size: 26px; }
+.count { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; width: 100%; max-width: 480px; }
+.count .unit { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 16px 2px 12px; min-width: 0; background: var(--paper); border: 1px solid var(--gold); }
+.count .unit b { font-family: var(--f-display); font-weight: 500; font-size: clamp(32px, 9vw, 52px); line-height: 1; font-variant-numeric: tabular-nums; color: var(--forest); }
+.count .unit span { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--soft-ink); }
+
+/* place */
+.place-name { font-family: var(--f-display); font-weight: 400; font-size: clamp(40px, 6vw, 56px); line-height: 1.1; text-wrap: balance; }
+.addr { font-size: 20px; }
+.muted { color: var(--soft-ink); }
+.btn-line {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: 0 32px; margin-top: 8px;
+  border: 1px solid var(--forest); color: var(--forest); text-decoration: none;
+  font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase;
+}
+.btn-line:hover { background: var(--forest); color: var(--on-forest); }
+
+/* parents */
+.parents .in { padding-block: 24px 88px; }
+.parents .rule { background: var(--gold); margin-bottom: 40px; }
+.hosts { display: grid; grid-template-columns: 1fr; gap: 36px; width: 100%; max-width: 360px; }
+.host { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 28px 16px; border: 1px solid var(--gold); min-width: 0; }
+.host .role { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-ink); }
+.host .who { font-family: var(--f-display); font-style: italic; font-size: clamp(24px, 4vw, 30px); line-height: 1.25; text-wrap: balance; }
+.host .amp { color: var(--gold); font-family: var(--f-display); font-style: italic; font-size: 22px; line-height: 1; }
+
+/* RSVP */
+.rsvp .in { max-width: 640px; }
+.script { font-family: var(--f-script); font-weight: 400; font-size: clamp(52px, 12vw, 76px); line-height: 1.1; color: var(--forest); }
+.caps { font-family: var(--f-display); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.25; }
+.rsvp h2.caps { font-size: clamp(28px, 5.5vw, 40px); text-wrap: balance; }
+.rsvp form { width: 100%; display: flex; flex-direction: column; align-items: stretch; gap: 26px; text-align: left; margin-top: 10px; }
+.field {
+  width: 100%; min-height: 68px; padding: 0 28px;
+  background: var(--paper); color: var(--forest);
+  border: 2px solid var(--forest); border-radius: 0;
+  font-family: var(--f-display); font-size: 24px; font-weight: 500; letter-spacing: 0.04em;
+}
+.field::placeholder { color: #6F6F6F; text-transform: uppercase; opacity: 1; }
+.field:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.hint { font-size: 22px; letter-spacing: 0.05em; }
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+legend { padding: 0; }
+.opt { display: flex; align-items: center; gap: 22px; min-height: 56px; cursor: pointer; font-size: 23px; letter-spacing: 0.05em; }
+.opt input {
+  appearance: none; -webkit-appearance: none; flex: none;
+  width: 32px; height: 32px; margin: 0; border: 3px solid #6B6B6B; border-radius: 50%;
+  display: grid; place-content: center; background: transparent;
+}
+.opt input::before { content: ""; width: 14px; height: 14px; border-radius: 50%; background: var(--forest); transform: scale(0); transition: transform 0.12s ease; }
+.opt input:checked { border-color: var(--forest); }
+.opt input:checked::before { transform: scale(1); }
+.opt input:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.send {
+  align-self: center; width: min(100%, 360px); min-height: 68px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--forest-btn); color: #FFFFFF; text-decoration: none;
+  font-family: var(--f-display); font-weight: 500; font-size: 26px; letter-spacing: 0.12em; text-transform: uppercase;
+  margin-top: 6px;
+}
+.send:hover { background: var(--forest); color: #FFFFFF; }
+.send:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.note { text-align: center; font-size: 15px; color: var(--soft-ink); }
+.status { text-align: center; min-height: 1.6em; font-size: 16px; color: var(--forest); font-weight: 500; }
+.lily { position: absolute; top: -70px; right: -90px; width: 300px; height: 300px; pointer-events: none; }
+
+/* footer */
+.foot { background: var(--forest); color: var(--on-forest); }
+.foot .in { padding-block: 72px 80px; max-width: 560px; }
+.foot .sig { font-family: var(--f-display); font-style: italic; font-size: clamp(30px, 4.5vw, 40px); line-height: 1.2; }
+.foot .eyebrow { color: var(--gold); }
+
+/* music button */
+.music {
+  position: fixed; z-index: 10;
+  right: max(16px, env(safe-area-inset-right, 0px));
+  bottom: max(16px, env(safe-area-inset-bottom, 0px));
+  width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-content: center;
+  background: var(--forest); color: var(--gold);
+  border: 1px solid var(--gold); cursor: pointer; padding: 0;
+  box-shadow: 0 4px 14px rgba(14,54,34,0.28);
+}
+.music:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.music svg { width: 24px; height: 24px; }
+.music .ico-off { display: none; }
+.music.off .ico-on { display: none; }
+.music.off .ico-off { display: block; }
+.music.playing { animation: pulse 2.4s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { box-shadow: 0 4px 14px rgba(14,54,34,0.28), 0 0 0 0 rgba(201,162,122,0.5); } 50% { box-shadow: 0 4px 14px rgba(14,54,34,0.28), 0 0 0 10px rgba(201,162,122,0); } }
+@media (prefers-reduced-motion: reduce) { .music.playing { animation: none; } }
+</style>
+</head>
+<body>
+
+<main>
+<section class="band hero">
+  <div class="in">
+    <div class="frame stack">
+      <p class="eyebrow">Приглашение на свадьбу</p>
+      <h1 class="names">
+        <span class="n">Амит</span>
+        <span class="amp">&amp;</span>
+        <span class="n">Камилла</span>
+      </h1>
+      <div class="rule"></div>
+      <p class="date-big">26 ноября 2026</p>
+      <p class="weekday">четверг</p>
+    </div>
+  </div>
+</section>
+
+<section class="band invite-art" aria-label="Изображение свадебного приглашения">
+  <div class="in stack">
+    <img src="invitation.jpg" alt="Свадебное приглашение Амита и Камиллы на 26 ноября 2026 года">
+  </div>
+</section>
+
+<section class="band welcome">
+  <div class="in stack" style="gap: 24px">
+    <h2 class="display">Дорогие родные и друзья!</h2>
+    <p>В этот день мы создаём нашу семью и очень хотим, чтобы вы были рядом. Приглашаем вас разделить с нами самый важный день и сделать его по-настоящему тёплым.</p>
+    <p class="signed">Амит Гапуров и Камилла Гапурова</p>
+  </div>
+</section>
+
+<section class="band mist">
+  <div class="in stack" style="gap: 28px; padding-block: 80px">
+    <p class="eyebrow">Дата</p>
+    <h2 class="month">Ноябрь 2026</h2>
+    <div class="cal" role="img" aria-label="Календарь ноября 2026, свадьба 26 ноября">
+      <div class="wd">Пн</div><div class="wd">Вт</div><div class="wd">Ср</div><div class="wd">Чт</div><div class="wd">Пт</div><div class="wd">Сб</div><div class="wd">Вс</div>
+      <i></i><i></i><i></i><i></i><i></i><i></i>
+      <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span>
+      <span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span>
+      <span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span>
+      <span>22</span><span>23</span><span>24</span><span>25</span><b>26</b><span>27</span><span>28</span>
+      <span>29</span><span>30</span>
+    </div>
+    <div class="count" id="count" role="timer" aria-label="Время до начала свадьбы">
+      <div class="unit"><b id="c-d">--</b><span id="l-d">дней</span></div>
+      <div class="unit"><b id="c-h">--</b><span id="l-h">часов</span></div>
+      <div class="unit"><b id="c-m">--</b><span id="l-m">минут</span></div>
+      <div class="unit"><b id="c-s">--</b><span id="l-s">секунд</span></div>
+    </div>
+    <p class="countdown" id="countdown">до начала торжества</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="in stack">
+    <p class="eyebrow">Место</p>
+    <h2 class="place-name">Рахима, зал торжеств</h2>
+    <p class="addr">Кульджинский тракт, 43</p>
+    <p class="muted">Начало в 17:00</p>
+    <a class="btn-line" href="https://2gis.kz/almaty/search/%D0%A0%D0%B0%D1%85%D0%B8%D0%BC%D0%B0%20%D0%B7%D0%B0%D0%BB%20%D1%82%D0%BE%D1%80%D0%B6%D0%B5%D1%81%D1%82%D0%B2" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+  </div>
+</section>
+
+<!-- Родители / организаторы торжества. Замените имена на настоящие в блоке ниже. -->
+<section class="band parents" id="parents">
+  <div class="in stack" style="gap: 22px">
+    <div class="rule"></div>
+    <h2 class="display">Сәйипханлар</h2>
+    <div class="hosts">
+      <div class="host">
+        <span class="who">Аблемит</span>
+        <span class="amp">&amp;</span>
+        <span class="who">Гузяллим</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band mist rsvp">
+  <svg class="lily" viewBox="0 0 300 300" aria-hidden="true">
+    <g transform="translate(150 150)" fill="#F7FAF4" stroke="#CFDACB" stroke-width="1.5">
+      <ellipse cx="0" cy="-78" rx="34" ry="84" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-78" rx="34" ry="84" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-78" rx="34" ry="84" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-78" rx="34" ry="84" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-78" rx="34" ry="84" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-78" rx="34" ry="84" transform="rotate(300)"/>
+    </g>
+    <g transform="translate(150 150)" stroke="#B9C9A8" stroke-width="2" fill="#E6C98F">
+      <line x1="0" y1="0" x2="-18" y2="-52"/><circle cx="-18" cy="-52" r="5"/>
+      <line x1="0" y1="0" x2="4" y2="-62"/><circle cx="4" cy="-62" r="5"/>
+      <line x1="0" y1="0" x2="26" y2="-48"/><circle cx="26" cy="-48" r="5"/>
+    </g>
+  </svg>
+  <div class="in stack" style="gap: 26px; padding-block: 80px 88px">
+    <p class="script">Дорогие гости!</p>
+    <h2 class="caps display" style="font-style: normal">Просим подтвердить ваше присутствие:</h2>
+    <form id="rsvp" novalidate>
+      <label for="guest-name" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%)">Имя и фамилия</label>
+      <input id="guest-name" class="field" type="text" name="name" placeholder="Имя и фамилия" autocomplete="name">
+      <p class="hint caps">Если придёте парой, укажите оба имени</p>
+      <fieldset>
+        <legend style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%)">Ваш ответ</legend>
+        <label class="opt caps" for="ans-1"><input id="ans-1" type="radio" name="answer" value="Я с удовольствием приду"><span>Я с удовольствием приду</span></label>
+        <label class="opt caps" for="ans-2"><input id="ans-2" type="radio" name="answer" value="Приду с парой"><span>Приду с парой</span></label>
+        <label class="opt caps" for="ans-3"><input id="ans-3" type="radio" name="answer" value="К сожалению, не смогу присутствовать"><span>К сожалению, не смогу присутствовать</span></label>
+      </fieldset>
+      <a id="send" class="send" href="#" rel="noopener">Отправить</a>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+      <p class="note">После нажатия откроется WhatsApp с готовым ответом. Останется отправить сообщение.</p>
+    </form>
+  </div>
+</section>
+
+<section class="band foot">
+  <div class="in stack" style="gap: 16px">
+    <div class="rule"></div>
+    <p class="sig">С любовью, Амит и Камилла Гапуровы</p>
+    <p class="eyebrow">26.11.2026</p>
+  </div>
+</section>
+</main>
+
+<!-- Музыка: положите mp3-файл рядом с index.html под именем music.mp3 (или поменяйте MUSIC_SRC в скрипте). -->
+<audio id="bg-music" loop preload="none"></audio>
+<button id="music-btn" class="music off" type="button" aria-label="Включить музыку" aria-pressed="false" hidden>
+  <svg class="ico-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l10-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+  <svg class="ico-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l10-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/><path d="M3 3l18 18"/></svg>
+</button>
+
+<script>
+// Номер WhatsApp для ответов гостей, в международном формате без плюса и пробелов (например 77001234567).
+var WA_NUMBER = "77771166776";
+// Файл с музыкой (лежит рядом с index.html). Если оставить пустым, кнопка музыки не покажется.
+var MUSIC_SRC = "music.mp3";
+
+(function () {
+  var form = document.getElementById('rsvp');
+  var nameInput = document.getElementById('guest-name');
+  var send = document.getElementById('send');
+  var status = document.getElementById('status');
+
+  function chosen() {
+    var r = form.querySelector('input[name="answer"]:checked');
+    return r ? r.value : '';
+  }
+  function buildLink() {
+    var text = 'Здравствуйте! Это ответ на приглашение на свадьбу Амита и Камиллы (26.11.2026).\n' +
+      'Имя: ' + nameInput.value.trim() + '\n' +
+      'Ответ: ' + chosen();
+    return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
+  }
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+  function refreshLink() {
+    if (WA_NUMBER && nameInput.value.trim() && chosen()) send.setAttribute('href', buildLink());
+  }
+  nameInput.addEventListener('input', refreshLink);
+  form.addEventListener('change', refreshLink);
+  send.addEventListener('click', function (e) {
+    if (!nameInput.value.trim()) {
+      e.preventDefault();
+      status.textContent = 'Укажите имя и фамилию.';
+      nameInput.focus();
+      return;
+    }
+    if (!chosen()) {
+      e.preventDefault();
+      status.textContent = 'Выберите один из вариантов ответа.';
+      return;
+    }
+    if (!WA_NUMBER) {
+      e.preventDefault();
+      status.textContent = 'Номер для ответа пока не добавлен. Сообщите о своём решении лично.';
+      return;
+    }
+    send.setAttribute('href', buildLink());
+    status.textContent = 'Открываем WhatsApp. Отправьте сообщение там.';
+  });
+
+  // Отсчёт до начала свадьбы: 26.11.2026, 17:00 по Алматы (UTC+5)
+  var START = Date.UTC(2026, 10, 26, 12, 0, 0);
+  function plural(n, one, few, many) {
+    var a = n % 10, b = n % 100;
+    if (a === 1 && b !== 11) return one;
+    if (a >= 2 && a <= 4 && (b < 12 || b > 14)) return few;
+    return many;
+  }
+  function tick() {
+    var total = Math.max(0, Math.floor((START - Date.now()) / 1000));
+    var left = total;
+    var d = Math.floor(total / 86400), h = Math.floor((total % 86400) / 3600), m = Math.floor((total % 3600) / 60), s = total % 60;
+    document.getElementById('c-d').textContent = d;
+    document.getElementById('c-h').textContent = h;
+    document.getElementById('c-m').textContent = m;
+    document.getElementById('c-s').textContent = s;
+    document.getElementById('l-s').textContent = plural(s, 'секунда', 'секунды', 'секунд');
+    document.getElementById('l-d').textContent = plural(d, 'день', 'дня', 'дней');
+    document.getElementById('l-h').textContent = plural(h, 'час', 'часа', 'часов');
+    document.getElementById('l-m').textContent = plural(m, 'минута', 'минуты', 'минут');
+    if (left === 0) {
+      document.getElementById('count').hidden = true;
+      document.getElementById('countdown').textContent = 'Сегодня наша свадьба';
+    }
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // Музыка: запускается при первом касании страницы (браузеры не разрешают автозапуск), кнопка включает и выключает звук.
+  var audio = document.getElementById('bg-music');
+  var btn = document.getElementById('music-btn');
+  if (MUSIC_SRC) {
+    audio.src = MUSIC_SRC;
+    btn.hidden = false;
+    var userPaused = false;
+    var started = false;
+    function setUi(on) {
+      btn.classList.toggle('off', !on);
+      btn.classList.toggle('playing', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.setAttribute('aria-label', on ? 'Выключить музыку' : 'Включить музыку');
+    }
+    function play() {
+      var p = audio.play();
+      if (p && p.then) p.then(function () { setUi(true); }).catch(function () { setUi(false); });
+      else setUi(true);
+    }
+    btn.addEventListener('click', function () {
+      started = true;
+      if (audio.paused) { userPaused = false; play(); }
+      else { userPaused = true; audio.pause(); setUi(false); }
+    });
+    function firstTouch(e) {
+      if (started || userPaused) return;
+      if (btn.contains(e.target)) return;
+      started = true;
+      play();
+    }
+    document.addEventListener('pointerdown', firstTouch, { once: false, passive: true });
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden && !audio.paused) { audio.pause(); setUi(false); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
